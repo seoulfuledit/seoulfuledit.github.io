@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="p:domain_verify" content="ce2c7421d0c0432e9d0f361c4fa1d810"><meta name="msvalidate.01" content="2F3F5401ACAA69E6D0E7E0240C5A7AF1"><title>Contact Us | The Seoulful Edit</title><meta name="description" content="Contact The Seoulful Edit for reader questions, corrections and brand inquiries."><meta property="og:title" content="Contact Us | The Seoulful Edit"><meta property="og:description" content="Contact The Seoulful Edit for reader questions, corrections and brand inquiries."><link rel="canonical" href="https://seoulfuledit.com/contact/"><meta property="og:type" content="website"><meta property="og:url" content="https://seoulfuledit.com/contact/"><meta property="og:image" content="https://seoulfuledit.com/og_home.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://seoulfuledit.com/og_home.jpg"><link rel="sitemap" href="/sitemap.xml"><link rel="alternate" type="application/rss+xml" title="The Seoulful Edit" href="/rss.xml"><meta property="og:site_name" content="The Seoulful Edit"><meta name="pinterest-rich-pin" content="true"><link rel="icon" href="/favicon_32.png?v=2"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"><script>(function(){const ga4 = "G-MWKTS137GF";
+
+    /* GA4와 동의(2026-11-17 대표님 B안, 콜트 검토).
+       1) 브라우저 시간대가 유럽이면 "Accept" 전까지 gtag.js를 아예 불러오지 않는다(동의 전 수집 안 함).
+       2) 두 번째 안전장치: EEA, 영국, 스위스는 Consent Mode v2 기본값을 거부로 둔다(시간대가 유럽이 아닌 유럽 방문자용).
+       3) 고른 값은 localStorage 'sfe-consent'('accept' 또는 'reject')에 남긴다. 저장이 막힌 브라우저는 매번 다시 묻는다.
+       4) 유럽 밖에서도 Cookie settings에서 Reject를 고르면 다음부터 불러오지 않는다. */
+    (function () {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('consent', 'default', {
+        ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied',
+        region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL',
+                 'PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'],
+        wait_for_update: 500
+      });
+      gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+
+      var KEY = 'sfe-consent';
+      var tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+      var europe = /^Europe\//.test(tz) || ['Atlantic/Reykjavik','Atlantic/Canary','Atlantic/Madeira','Atlantic/Azores','Atlantic/Faroe'].indexOf(tz) >= 0;
+      var saved = null; try { saved = localStorage.getItem(KEY); } catch (e) {}
+      var loaded = false;
+
+      function load() {
+        window.__sfeGA = true;
+        if (loaded) return; loaded = true;
+        gtag('js', new Date());
+        gtag('config', ga4, {
+          allow_google_signals: false,             // Google 신호 끔(GA 관리 화면에서도 끔)
+          allow_ad_personalization_signals: false, // 광고 개인화에 쓰지 않음
+          cookie_expires: 60 * 60 * 24 * 395       // 쿠키 13개월(처리방침 "up to 13 months")
+        });
+        var s = document.createElement('script');
+        s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga4);
+        document.head.appendChild(s);
+      }
+      function dropCookies() {
+        var host = location.hostname.replace(/^www\./, '');
+        document.cookie.split(';').forEach(function (c) {
+          var n = c.split('=')[0].trim();
+          if (n === '_ga' || n.indexOf('_ga_') === 0) {
+            ['', '; domain=' + host, '; domain=.' + host].forEach(function (d) { document.cookie = n + '=; Max-Age=0; path=/' + d; });
+          }
+        });
+      }
+      window.__sfeConsent = {
+        europe: europe,
+        choice: function () { return saved; },
+        set: function (v) {
+          saved = v; try { localStorage.setItem(KEY, v); } catch (e) {}
+          if (v === 'accept') { gtag('consent', 'update', { analytics_storage: 'granted' }); load(); }
+          else { gtag('consent', 'update', { analytics_storage: 'denied' }); window.__sfeGA = false; dropCookies(); }
+        },
+        needsBanner: function () { return europe && saved !== 'accept' && saved !== 'reject'; }
+      };
+      if (saved === 'accept') { gtag('consent', 'update', { analytics_storage: 'granted' }); load(); }
+      else if (saved !== 'reject' && !europe) load();
+    })();
+  })();</script><style>.prose{max-width:720px;margin:56px auto 0;padding:0 24px}.prose h1{font-size:44px;line-height:1.15;margin:10px 0 14px}.prose .lede{font-size:20px;color:var(--muted);margin-bottom:8px}.prose h2{font-family:Playfair Display,Georgia,serif;font-size:26px;margin:40px 0 10px;color:var(--green)}.prose h3{font-size:18px;margin:24px 0 6px}.prose p,.prose li{margin:0 0 14px}.prose ul,.prose ol{padding-left:22px}.prose a{text-decoration:underline;text-underline-offset:3px}.prose .box{background:var(--paper);border-radius:0;padding:20px 22px;margin:24px 0}.prose table{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 20px}.prose th,.prose td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}@media(max-width:760px){.prose h1{font-size:34px}.prose{margin-top:36px;padding:0 22px}}
+</style>
+<link rel="stylesheet" href="/_astro/about.BtX_UjHb.css"></head> <body> <header class="site"> <div class="wrap"> <div class="top"> <div class="l meta">K-beauty, explained from Seoul</div> <a class="logo" href="/" aria-label="The Seoulful Edit home"><img src="/logo_white.png" alt="the seoulful edit"></a> <div class="r"><button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button></div><!-- 뉴스레터 버튼 숨김, 햄버거 메뉴(11/16 대표님) --> </div> <nav class="cats"><a href="/category/k-beauty">K-Beauty</a><a href="/category/travel">Travel</a><a href="/category/wellness">Wellness</a></nav> </div> </header> <div class="drawer" id="drawer" hidden> <div class="drawer-in"> <button class="close" aria-label="Close menu">&times;</button> <div class="grp"><a class="gh" href="/category/k-beauty">K-Beauty</a> <div class="tg"><a href="/category/k-beauty/explained">Explained</a><a href="/category/k-beauty/skincare">Skincare</a><a href="/category/k-beauty/makeup">Makeup</a><a href="/category/k-beauty/hair">Hair</a><a href="/category/k-beauty/body">Body</a><a href="/category/k-beauty/shopping">Shopping</a></div></div><div class="grp"><a class="gh" href="/category/travel">Travel</a> <div class="tg"><a href="/category/travel/seoul">Seoul</a><a href="/category/travel/gyeongju">Gyeongju</a></div></div><div class="grp"><a class="gh" href="/category/wellness">Wellness</a> <div class="tg"><a href="/category/wellness/head-spa">Head Spa</a><a href="/category/wellness/jjimjilbang-spa">Jjimjilbang &amp; Spa</a></div></div>  <div class="grp more"><a href="/about">About</a><a href="/how-we-choose">How we choose products</a><a href="/contact">Contact</a></div> </div> </div> <script type="module">const n=document.querySelector(".burger"),t=document.getElementById("drawer"),d=e=>{t.hidden=!e,n.setAttribute("aria-expanded",String(e)),document.body.style.overflow=e?"hidden":""};n.addEventListener("click",()=>d(t.hidden));t.addEventListener("click",e=>{(e.target===t||e.target.closest(".close")||e.target.closest("a"))&&d(!1)});document.addEventListener("keydown",e=>{e.key==="Escape"&&d(!1)});</script> <main>  <article class="prose"> <div class="kicker">Contact</div> <h1 class="serif">Contact Us</h1>   <p class="lede">We read every message.</p> <div class="box"> <p><b>Email:</b> <a href="mailto:editor@seoulfuledit.com">editor@seoulfuledit.com</a></p> <p style="margin:0">Please add "The Seoulful Edit" to the subject line. We usually reply within 2 business days (Korea time).</p> </div> <h2>What to write to us about</h2> <ul> <li><b>Readers:</b> questions about a product or a store in Korea, or ideas for a story.</li> <li><b>Corrections:</b> if something in an article is wrong or out of date, tell us the page and what changed.</li> <li><b>Brands:</b> product information and press materials. Sending a product does not guarantee coverage.</li> </ul> <h2>Follow us</h2> <p><a href="https://www.pinterest.com/seoulfuledit/" rel="noopener">Pinterest</a></p> <h2>Publisher</h2> <p>CoreBridge Co., Ltd. (주식회사 코어브릿지), 272 Cheongseok-ro, 1004-F368, Paju-si, Gyeonggi-do, Republic of Korea. Business registration number 835-81-02965.</p>  </article> </main> <footer class="site"> <div class="wrap"> <div class="cols"> <div><img src="/logo_white.png" alt="the seoulful edit"><p>A K-beauty and wellness magazine from Seoul for US readers and visitors to Korea.</p></div> <div><p><a href="/about">About</a></p><p><a href="/how-we-choose">How we choose products</a></p><p><a href="https://www.pinterest.com/seoulfuledit/" rel="noopener">Pinterest</a></p><p><a href="https://www.instagram.com/seoulful.edit/" rel="noopener">Instagram</a></p><p><a href="https://flipboard.com/@seoulfuledit" rel="noopener">Flipboard</a></p></div><!-- 핀터레스트 등 채널 링크: 구글이 사이트에서 핀터레스트 계정을 찾아가게(11/22 대표님) --> <div><p><a href="/privacy">Privacy</a></p><p><button type="button" class="cookie-link" data-cookie-settings>Cookie settings</button></p><p><a href="/disclosure">Disclosure</a></p><p><a href="/contact">Contact</a></p></div> </div> <small>Every product is chosen by our editors. No brand pays to appear on this site. Images with AI-generated people are labeled. © 2026 The Seoulful Edit.</small> </div> </footer>  <div class="cc" id="cookie-consent" role="dialog" aria-labelledby="cc-title" aria-describedby="cc-text" hidden> <h2 id="cc-title">Cookies and analytics</h2> <p id="cc-text">We'd like to use Google Analytics cookies (provided by Google) to count visits and see which articles are read. <span data-cc-eu hidden>Nothing is collected unless you choose Accept. </span>We don't use advertising cookies. You can change your choice anytime with "Cookie settings" at the bottom of every page. <a href="/privacy#cookies-and-analytics">Privacy Policy</a></p> <div class="row"><button type="button" data-cc="accept">Accept</button><button type="button" data-cc="reject">Reject</button></div> </div> <script>
+      (function () {
+        var c = window.__sfeConsent, box = document.getElementById('cookie-consent');
+        if (!c || !box) return;
+        if (c.europe) box.querySelector('[data-cc-eu]').hidden = false; // 유럽 시간대에만 보이는 문장(콜트 11/17)
+        function open(focus) { box.hidden = false; if (focus) box.querySelector('button').focus(); }
+        box.addEventListener('click', function (e) {
+          var b = e.target.closest('button[data-cc]'); if (!b) return;
+          c.set(b.getAttribute('data-cc')); box.hidden = true;
+        });
+        document.querySelectorAll('[data-cookie-settings]').forEach(function (l) { l.addEventListener('click', function () { open(true); }); });
+        if (c.needsBanner()) open(false);
+
+        /* GA4 핵심 이벤트: 판매처, 소셜 링크 클릭. 제품, 판매처, 링크 주소만 보내고 이름, 이메일은 보내지 않는다.
+           GA4가 켜진 뒤(__sfeGA)에만 보낸다. 동의 전 클릭은 쌓아 두지도 않는다 */
+        var SHOPS = /(^|\.)(amazon\.com|oliveyoung\.co\.kr|daisomall\.co\.kr|amoremall\.com|roundlab\.com|roundlab\.co\.kr|cosrx\.com|trip\.com)$/;
+        document.addEventListener('click', function (e) {
+          if (!window.__sfeGA) return;
+          var a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
+          var u; try { u = new URL(a.href); } catch (_) { return; }
+          if (u.hostname === location.hostname || a.closest('.src')) return; // 기사 끝 Sources 목록은 제품 링크가 아님
+          var host = u.hostname.replace(/^www\./, '');
+          if (SHOPS.test(host)) {
+            var p = a.parentElement, pn = p && p.querySelector('.pname'), br = p && p.querySelector('.brand');
+            gtag('event', 'shop_click', { retailer: host, product: ((br ? br.textContent + ' ' : '') + (pn ? pn.textContent : a.textContent)).trim().slice(0, 100), link_url: a.href });
+          } else if (/(^|\.)pinterest\.[a-z.]+$/.test(host)) {
+            gtag('event', 'social_click', { network: 'pinterest', link_url: a.href });
+          } else if (/(^|\.)instagram\.com$/.test(host)) {
+            gtag('event', 'social_click', { network: 'instagram', link_url: a.href });
+          }
+        });
+      })();
+    </script>  </body> </html>
